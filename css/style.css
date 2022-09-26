@@ -1,0 +1,233 @@
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* default setting css end  */
+/* common css for this project start */
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800px;
+}
+a{
+   text-decoration: none; 
+}
+ul li{
+    list-style: none;
+}
+ .container{
+    
+    width: 1170px;
+    margin: auto; 
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info{
+    text-align: center;
+    color:#7e8287;
+    text-transform: none;
+    padding: 0px 0px 95px 0px;
+}
+.info h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.info p b{
+    font-size:  23px ;
+    font-weight: 800;
+}
+
+/* common css for this project end */
+/* navigation part css start  */
+ nav .row{
+    
+    align-items: center;
+  
+}
+nav{
+    background-color: #02918b;
+}
+nav .container .logo{
+    width: 20%;
+}
+nav .container .menu{
+    width: 80%;
+ 
+}
+nav .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 26px 25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800px;
+    transition: 0.7s;
+}
+/* [ using hover for menu transion ]  */
+nav ul li a:hover{
+    color: #cfc91d;
+    background-color: #fff;
+    border-radius: 35px;
+
+}
+
+/* navigation part css end  */
+/* banner part start  */
+#banner{
+    background-image: url(../image/bannerphoto2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 727px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+   
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+
+#banner h3{
+    
+    font-size: 30px;
+    font-weight: 400px;
+    text-transform: none;
+    
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800px;
+    letter-spacing: 30px;
+    
+}
+#banner p{
+    font-size: 18px;
+    font-weight: 400px;
+    text-transform: none;
+}
+#banner img{
+    display: block;
+    margin:  53px auto;
+}
+#banner a{
+    display: inline-block;
+    color: black;
+    background-color: #cfc91d;
+    padding: 20px 42px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: 800px;
+    
+    transition: 0.7s;
+
+}
+/* using hover for know more  */
+#banner a:hover{
+    color: #cfc91d;
+    background-color: #02918b;
+    border-radius: 40px;
+}
+/* banner part end  */
+/* about part css start  */
+#about{
+    padding: 98px 0px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[problem here] ~~~~~~~~~~~~~~~~~ */
+/* #about p{
+    width: 875px;
+    margin: auto;
+} */
+#about .info p{
+    display: inline-block;
+    padding: 33px 0px 0px 0px;
+    
+
+    width: 875px;
+    margin: auto;
+}
+
+#about .about_item{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #d9dbdb;
+    padding: 36px 60px;
+}
+
+#about .about_item i{
+    color:#02918b;
+    font-size: 25px;
+
+}
+#about .about_item h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 29px 0px;
+}
+
+#about .about_item p{
+    font-size: 11px;
+    color: #7e8287;
+}
+
+/* about part css end */
+/* service part css start  */
+#service{
+    background-image: url(../image/service.png);
+    background-position: center;
+    background-size: cover;
+    padding: 74px 0px;
+}
+#service .inner_container{
+    width: 50%;
+}
+#service .info{
+    text-align: left;
+}
+#service .service_item{
+    width: 50%;
+    padding: 25px 110px 25px 0;
+ }
+ #service .service_item i{
+    color:#02918b;
+    font-size: 25px;
+ }
+ #service .service_item h4{
+    font-size: 16px;
+    color:#7e8287;
+    font-weight: 800;
+    padding: 29px 0;
+ }
+ #service .service_item p{
+    font-size: 11px;
+    color: #7e8287;
+/* service part css end  */
